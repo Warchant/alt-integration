@@ -14,12 +14,8 @@ jobs:
           java-version: 11.0.x	
       - name: Build	
         run: ./gradlew build -x test	
-      - name: Test	
-        run: ./gradlew test	
       - name: Install	
         run: ./gradlew install	
-      - name: Collect Coverage	
-        run: ./gradlew jacocoTestReport
       - name: Docker Push
         uses: warchant/Publish-Docker-Github-Action@master
         with:
