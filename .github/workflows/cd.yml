@@ -17,7 +17,7 @@ jobs:
       - name: Install	
         run: ./gradlew install	
       - name: Docker Push
-        uses: warchant/Publish-Docker-Github-Action@master
+        uses: warchant/Publish-Docker-Github-Action@tezt-1
         with:
           name: warchantua/tezt
           workdir: alt-integration-grpc-service
